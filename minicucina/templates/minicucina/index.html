@@ -1,0 +1,535 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Cucina - Snack Italien</title>
+  <meta name="title" content="Minicucina - Restaurant Italien">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'minicucina/css/styles.css' %}">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Minicucina</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          78 Rue Saint-Pierre de Vaise, 69009 Lyon
+        </span>
+      </address>
+
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Ouvert du lundi au vendredi de 11h à 15h</span>
+      </div>
+ 
+      <div class="separator"></div>
+    </div>
+  </div>
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'minicucina/images/logo_minicucina.png' %}" width="160" height="50" alt="Logo Mini Cuccina">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Accueil</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menu</span>
+            </a>
+          </li>
+         
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="text-center">
+          <div class="separator"></div>
+
+          <p class="menu-text text-center">
+            
+            Ouvert du lundi au vendredi de <span class="span">11h</span> à <span class="span">15h.</span>
+          </p>
+          <p class="headline-1 navbar-title">Nous trouver</p>
+
+        
+        
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=4.785601781672313,45.76134376179301,4.819601781672313,45.78134376179301&amp;layer=mapnik&amp;marker=45.77134376179301,4.802601781672313" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+
+          <a class="adresse" href="https://www.google.fr/maps/place/78+Rue+Saint-Pierre+de+Vaise,+69009+Lyon/@45.7711567,4.8000698,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4eb71401fadd1:0xe372cb05abf0622!8m2!3d45.7711567!4d4.8026447!16s%2Fg%2F11c1jh8vf9?entry=ttu" class="topbar-item link">
+            <div class="icon">
+              <ion-icon name="location-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+            </div>
+            <span class="span ">78 rue Saint Pierre de Vaise</span>
+    
+          </a>
+
+       
+        </div>
+   
+
+      </nav>
+
+      
+      <a id="reserverMenu" href="tel:0631513927" class="btn btn-primary">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+        </div>
+        <span class="text text-1">Reserver</span>
+
+        <span class="text text-2" aria-hidden="true">+33 6 31 51 39 27</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="{% static 'minicucina/images/hero-slider-1.jpg' %}" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Cuisine Italienne</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              La saveur d'une <br> cuisine italienne !
+        
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Venez découvrir la restauration italienne !
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Voir le menu</span>
+
+              <span class="text text-2" aria-hidden="true">Voir le menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="{% static 'minicucina/images/hero-slider-2.jpg' %}" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+           
+            <p class="label-2 section-subtitle slider-reveal">Cuisine Italienne</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              La rapidité d'un snack !<br> 
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Venez découvrir la restauration italienne !
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Voir le menu</span>
+
+              <span class="text text-2" aria-hidden="true">Voir le menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="{% static 'minicucina/images/hero-slider-3.jpg' %}" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+           
+            <p class="label-2 section-subtitle slider-reveal">Cuisine Italienne</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Plats sains et gourmands.<br>Prix abordables !
+             
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Venez découvrir la restauration italienne ! 
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Voir le menu</span>
+
+              <span class="text text-2" aria-hidden="true">Voir le menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#about" class="hero-btn has-after">
+          <img src="{% static 'minicucina/images/hero-icon.png' %}" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Réserver une table</span>
+        </a>
+
+      </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Notre histoire</p>
+
+            <h2 class="headline-1 section-title">Mini Cucina</h2>
+
+            <p class="section-text">
+              Sur place / A emporter <br>
+              Horaires d'ouverture : <br>
+              Le midi de 11h30 à 14h30, du lundi au vendredi. <br>
+              Nos produits étant cuisinés maison chaque jour, merci de nous appeler pour confirmer notre ouverture le soir. <br>
+              <br>
+              Pour les groupes, réservations possibles en dehors des horaires habituels, contactez-nous ! <br>
+              N'hésitez à réserver vos plats à l'avance par téléphone (SMS ou appel) pour gagner du temps!
+            </p>
+          
+            <a class="adresse" href="https://www.google.fr/maps/place/78+Rue+Saint-Pierre+de+Vaise,+69009+Lyon/@45.7711567,4.8000698,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4eb71401fadd1:0xe372cb05abf0622!8m2!3d45.7711567!4d4.8026447!16s%2Fg%2F11c1jh8vf9?entry=ttu" class="topbar-item link">
+              <div class="icon">
+                <ion-icon name="location-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+              </div>
+              <span class="span ">78 rue Saint Pierre de Vaise</span>
+            </a>
+            
+
+            <a id="reserverMenu" href="tel:0631513927" class="btn btn-primary">
+              <div class="icon">
+                <ion-icon name="call-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+              </div>
+              <span class="text text-1">Reserver</span>
+      
+              <span class="text text-2" aria-hidden="true">+33 6 31 51 39 27</span>
+            </a>
+            
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="{% static 'minicucina/images/about-banner.jpg' %}"  width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="{% static 'minicucina/images/about-abs-image.jpg' %}"   width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img  src="{% static 'minicucina/images/badge-2.png' %}" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+          <img  src="{% static 'minicucina/images/shape-3.png' %}" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          
+
+          {% for jour in jours_semaine %}
+          <h2 class="headline-1 section-title text-center">{{ jour|upper }}</h2>
+        
+          <!-- Boucle pour chaque type de repas -->
+          {% for typeRepas, repas_objects in classes.items %}
+            {% if typeRepas != 'boissons' %}
+              <p class="section-subtitle text-center label-2">{{ typeRepas }}</p>
+              <ul class="grid-list">
+                <!-- Boucle pour chaque repas du type de repas -->
+                {% for repas in repas_objects %}
+                  {% for choix_jour, libelle_jour in repas.JOUR_CHOICES %}
+                    {% if choix_jour == jour and jour in repas.jour %}
+                      <li>
+                        <div class="menu-card hover:card">
+                          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                            <img src="static/minicucina/images/{{ typeRepas|lower }}/{{ repas.nom_fichier }}" width="100" height="100" loading="lazy" alt="{{ repas.nom }}" class="img-cover-carte">
+                          </figure>
+                          <div>
+                            <div class="title-wrapper">
+                              <h3 class="title-3">
+                                <a href="#" class="card-title">{{ repas.nom }}</a>
+                              </h3>
+                              
+                              {% if current_day|lower == jour %}
+                              <span class="badge label-1">{{ typeRepas|upper }} DU JOUR</span>
+                              {% endif %}
+                              <span class="span title-2">{{ repas.prix }}€</span>
+                            </div>
+                            <p class="card-text label-1">
+                              {{ repas.description }}
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+
+
+        <!--AJOUT DES BOISSONS-->
+          <h2 class="headline-1 section-title text-center">BOISSONS</h2>
+        
+ 
+              <p class="section-subtitle text-center label-2">A LA CARTE</p>
+              <ul class="grid-list">
+                <!-- Boucle pour chaque repas du type de repas -->
+                {% for boisson in boissons %}
+    
+                      <li>
+                        <div class="menu-card hover:card">
+                          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                            <img src="static/minicucina/images/boissons/{{ boisson.nom_fichier }}" width="100" height="100" loading="lazy" alt="{{ boisson.nom }}" class="img-cover-carte">
+                          </figure>
+                          <div>
+                            <div class="title-wrapper">
+                              <h3 class="title-3">
+                                <a href="#" class="card-title">{{ boisson.nom }}</a>
+                              </h3>
+                       
+                              <span class="span title-2">{{ boisson.prix }}€</span>
+                            </div>
+                            <p class="card-text label-1">
+                              {{ boisson.description }}
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+          
+                {% endfor %}
+              </ul>
+       
+       
+
+        
+          <img src="{% static 'minicucina/images/shape-5.png' %}"  width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="{% static 'minicucina/images/shape-6.png' %}" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+        <a id="reserverMenu" href="tel:0631513927" class="btn btn-primary">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+          </div>
+          <span class="text text-1">Reserver</span>
+
+          <span class="text text-2" aria-hidden="true">+33 6 31 51 39 27</span>
+        </a>
+
+      
+      </section>
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-color: black">
+    <div class="container enfantfooter">
+
+      <div class="footer-top grid-list">
+
+      
+
+        <ul class="footer-list">
+            <a href="mailto:contact@mini-cucina.com" class="topbar-item link">
+              <div class="icon">
+                <ion-icon name="mail-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+              </div>
+      
+              <span class="span">contact@mini-cucina.com</span>
+            </a>
+            <a href="tel:0631513927" class="topbar-item link">
+              <div class="icon">
+                <ion-icon name="call-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+              </div>
+      
+              <span class="span">+33 6 31 51 39 27</span>
+            </a>
+          
+            <a href="https://www.google.fr/maps/place/78+Rue+Saint-Pierre+de+Vaise,+69009+Lyon/@45.7711567,4.8000698,17z/data=!3m1!4b1!4m6!3m5!1s0x47f4eb71401fadd1:0xe372cb05abf0622!8m2!3d45.7711567!4d4.8026447!16s%2Fg%2F11c1jh8vf9?entry=ttu" class="topbar-item link">
+              <div class="icon">
+                <ion-icon name="location-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+              </div>
+              <span class="span">78 rue Saint Pierre de Vaise</span>
+            </a>
+      
+            <a href="https://www.facebook.com/Mini-Cucina-734394433315059/photos/?ref=page_internal" class="topbar-item link">
+              <div class="icon">
+                <ion-icon name="logo-facebook" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+              </div>
+              <span class="span">Facebook</span>
+            </a>
+        </ul>
+        <ul class="footer-list">
+
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=4.785601781672313,45.76134376179301,4.819601781672313,45.78134376179301&amp;layer=mapnik&amp;marker=45.77134376179301,4.802601781672313" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
+          target="_blank" class="link">codewithsadee</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+  <!-- 
+    - custom js link
+  -->
+
+  <script src="{% static 'minicucina/js/script.js' %}"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
